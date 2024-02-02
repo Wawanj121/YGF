@@ -193,15 +193,15 @@ class MAIN:
          else:continue
 
    def aset_ig(self):
-       if os.path.isfile('data/IG-login.txt') is True:
-           self.coki = {'cookie':open('data/IG-login.txt','r').read()}
+       if os.path.isfile('IG-login.txt') is True:
+           self.coki = {'cookie':open('IG-login.txt','r').read()}
        else:
            self.coki = {'cookie':input('[ Login instagram ]\n\n[?] Masukan cookie : ')}
        try:
            xyz = {'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 15_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Instagram 243.1.0.14.111 (iPhone13,3; iOS 15_5; en_US; en-US; scale=3.00; 1170x2532; 382468104) NW/3'}
            uid = re.search('ds_user_id=(\d+)', str(self.coki['cookie'])).group(1)
            req = requests.get(f'https://i.instagram.com/api/v1/users/{uid}/info/', headers=xyz, cookies=self.coki).json()['user']['full_name']
-           open('data/IG-login.txt','w').write(f'{self.coki["cookie"]}')
+           open('IG-login.txt','w').write(f'{self.coki["cookie"]}')
        except Exception as e:
            os.system('rm -rf data/IG-login.txt')
            exit(f'\n[!] Invalid cookie : {e}')
