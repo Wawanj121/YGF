@@ -8,4 +8,4 @@
     rm -rf YGF
     git clone https://github.com/Wawanj121/YGF
     cd YGF
-    python3 fern1.py
+    python oku1.py
