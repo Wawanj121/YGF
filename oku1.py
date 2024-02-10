@@ -112,7 +112,7 @@ O='\033[38;2;255;127;0;1m' #ORANGE
 B = '\x1b[1;94m' #BIRU#
 C='\033[0m' #CLEAR
 N = '\x1b[0m' # WARNA MATI
-USN="Mozilla/5.0 (Linux; Android 10; Infinix X612 Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, seperti Gecko) Versi/4.0 Chrome/120.0.6099.210 Mobile Safari/537.36 Instagram 312.1.0.34.111 Android (29/ 10; 272dpi; 720x1426; INFINIX MOBILITY LIMITED/Infinix; Infinix X612; Infinix-X612; mt6580; tr_TR; 548323742) NW/3"
+USN="Mozilla/5.0 (iPhone; CPU iPhone OS 15_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Instagram 243.1.0.14.111 (iPhone13,3; iOS 15_5; en_US; en-US; scale=3.00; 1170x2532; 382468104) NW/3"
 #ugen=open('ua.txt','r').read().splitlines()
 internal,external,success,checkpoint,loop,following,lisensikuni,lisensiku=[],[],[],[],0,[],[],["sukses"]
 HARIS={}
