@@ -1638,7 +1638,7 @@ if __name__=='__main__':
 	except:pass
 	try:
 		with requests.Session() as ses:
-	         ko = ses.get('https://pastebin.com/raw/Ykjk8Y9B').json()
+	         ko = ses.get('https://pastebin.com/raw/9G1Pc1wG').json()
 	         HARIS.update(ko)
 	         ki = ses.get('https://pastebin.com/raw/HgttQbWx').json()
 	         HARIS1.update(ki)
